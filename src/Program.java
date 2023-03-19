@@ -1,9 +1,14 @@
 package src;
 
+import src.SpotifyObjects.Playlist;
+import src.SpotifyObjects.Track;
+
 import java.io.*;
+import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Program {
@@ -51,6 +56,10 @@ public class Program {
     }
 
     public void filterDuplicates(String playlistID) {
-
+        try {
+            List<Track> tracks = handler.getTracks(playlistID);
+        } catch (MalformedURLException e) {
+            return;
+        }
     }
 }
