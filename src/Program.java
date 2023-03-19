@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Program {
     String key, clientID;
+    APIHandler handler;
     Scanner in;
     public static void main(String[] args) {
         Program program = new Program();
@@ -21,7 +22,10 @@ public class Program {
             clientID = Files.readString(Path.of("clientID.txt"));
         } catch (IOException e) {
             System.err.println("No API credentials were found. No connection to spotify services can be established");
+            key = null;
+            clientID = null;
         }
+        handler = new APIHandler(key, clientID);
 
         while (running) {
             int input = -1;
