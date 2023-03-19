@@ -1,7 +1,4 @@
-package src;
-
-import src.SpotifyObjects.Playlist;
-import src.SpotifyObjects.Track;
+import SpotifyObjects.Track;
 
 import java.io.*;
 import java.net.MalformedURLException;

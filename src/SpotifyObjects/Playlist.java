@@ -1,4 +1,4 @@
-package src.SpotifyObjects;
+package SpotifyObjects;
 
 import java.util.List;
 import java.util.Objects;

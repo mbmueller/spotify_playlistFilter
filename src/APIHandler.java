@@ -1,11 +1,11 @@
-package src;
-
-import src.SpotifyObjects.Track;
+import SpotifyObjects.Track;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.json.*;
 
 public class APIHandler {
     String key, clientID;
