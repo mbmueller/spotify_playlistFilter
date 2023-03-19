@@ -106,3 +106,5 @@ fabric.properties
 /.idea/Spotify.iml
 /.idea/vcs.xml
 /clientID.txt
+/package.json
+/package-lock.json
