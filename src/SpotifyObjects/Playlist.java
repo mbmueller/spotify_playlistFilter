@@ -1,9 +1,11 @@
 package src.SpotifyObjects;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Playlist {
     private String name, id;
+    private List<Track> tracks;
 
     @Override
     public boolean equals(Object o) {
